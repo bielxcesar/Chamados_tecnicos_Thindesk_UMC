@@ -2,6 +2,27 @@
 
 Aplicação Spring Boot com MongoDB, Thymeleaf e autenticação por sessão.
 
+## Versionamento
+
+A versão atual é **`1.0.0-alpha`**, definida no [`pom.xml`](pom.xml). Esta prévia da versão 1.0.0 inclui abertura, consulta e resolução de chamados, autenticação por sessão, validação de dados e permissões por perfil.
+
+O projeto segue o formato `MAJOR.MINOR.PATCH[-pré-lançamento]`.
+
+| Parte | Quando muda |
+|---|---|
+| `MAJOR` (maior) | Mudanças incompatíveis na API documentada |
+| `MINOR` (menor) | Funcionalidades novas que preservam a compatibilidade |
+| `PATCH` (correção) | Correções que preservam a compatibilidade |
+| `alpha` (pré-lançamento) | Identifica uma versão preliminar anterior à versão estável |
+
+[Especificação do Versionamento Semântico 2.0.0](https://semver.org/lang/pt-BR/)
+
+## Dashboard
+
+Tela inicial do Thindesk após a autenticação, com o menu de navegação da aplicação.
+
+![Dashboard do Thindesk com menu lateral e tela de boas-vindas](docs/dashboard.png)
+
 ## Executar
 
 Requer JDK 17 ou superior, MongoDB e acesso ao Maven Central na primeira compilação.
@@ -22,7 +43,7 @@ redefine a senha de contas existentes. O arquivo .env.example é apenas referên
 Spring Boot não carrega um arquivo .env automaticamente.
 
 O empacotamento foi padronizado para JAR executável (antes WAR com dependências
-Java EE antigas): `./mvnw package`, seguido de `java -jar target/thindesk-1.0-alpha.jar`.
+Java EE antigas): `./mvnw package`, seguido de `java -jar target/thindesk-1.0.0-alpha.jar`.
 
 ## Permissões
 
