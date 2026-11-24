@@ -1,0 +1,8 @@
+<!DOCTYPE html><html lang="pt-BR" xmlns:th="http://www.thymeleaf.org"><body>
+<div th:fragment="sidebar"><div id="sidebar"><h4 class="text-center py-3">Thindesk</h4>
+<ul class="nav flex-column"><li><a class="nav-link" th:href="@{/}">Início</a></li>
+<li><a class="nav-link" th:href="@{/chamados}">Chamados</a></li>
+<li th:if="${admin}"><a class="nav-link" th:href="@{/clientes}">Clientes</a></li>
+<li th:if="${admin}"><a class="nav-link" th:href="@{/ajustes-horarios}">Horários de atendimento</a></li></ul>
+<form th:action="@{/logout}" method="post" class="p-3"><button class="btn btn-outline-secondary">Sair</button></form>
+</div></div></body></html>
