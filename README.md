@@ -2,15 +2,24 @@
 
 Sistema web de chamados técnicos com Spring Boot, Thymeleaf e MongoDB. Permite abrir, acompanhar e resolver chamados.
 
+## Demonstração
+
+Acesse [Thindesk no Railway](https://thindesk-production.up.railway.app/login).
+
+- Usuário: `demo`
+- Senha: `ThindeskDemo!2026`
+
+A conta é compartilhada e pode abrir e consultar os chamados de demonstração. Use dados fictícios.
+
 ## Dashboard
 
 ![Tela inicial do Thindesk com menu lateral](docs/dashboard.png)
 
 ## Versão
 
-A versão `1.0.1-alpha` está definida no [pom.xml](pom.xml). Esta atualização revisa a documentação da versão alpha.
+A versão `1.0.1-beta` está definida no [pom.xml](pom.xml). Esta versão inclui a publicação do ambiente de demonstração.
 
-O formato é `MAJOR.MINOR.PATCH`. O primeiro número muda quando há quebra de compatibilidade na API. O segundo indica novas funcionalidades compatíveis e o terceiro, correções compatíveis. O sufixo `-alpha` identifica um pré-lançamento. [SemVer 2.0.0](https://semver.org/lang/pt-BR/)
+O formato é `MAJOR.MINOR.PATCH`. O primeiro número muda quando há quebra de compatibilidade na API. O segundo indica novas funcionalidades compatíveis e o terceiro, correções compatíveis. O sufixo `-beta` identifica um pré-lançamento. [SemVer 2.0.0](https://semver.org/lang/pt-BR/)
 
 ## Execução local
 
@@ -23,7 +32,7 @@ $env:ADMIN_PASSWORD = "defina-uma-senha-forte"
 .\mvnw.cmd spring-boot:run
 ```
 
-Acesse [localhost:8080/login](http://localhost:8080/login). A senha cria o administrador na primeira execução. Use uma senha própria de pelo menos 12 caracteres. Para gerar o JAR, execute `.\mvnw.cmd package`. O arquivo será gerado em `target/thindesk-1.0.1-alpha.jar`.
+Acesse [localhost:8080/login](http://localhost:8080/login). A senha cria o administrador na primeira execução. Use uma senha própria de pelo menos 12 caracteres. Para gerar o JAR, execute `.\mvnw.cmd package`. O arquivo será gerado em `target/thindesk-1.0.1-beta.jar`.
 
 ## Perfis
 
